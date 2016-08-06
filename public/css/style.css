@@ -682,7 +682,7 @@ a.like_name {
 }
 /*-- news-letter-starts-here --*/
 .news-letter {
-    background-color: #F7F7F7;
+    background-color: #f5f5f5;
     padding: 35px 0;
 }
 .join h6 {
@@ -713,7 +713,7 @@ a.like_name {
     cursor: pointer;
     width: 22%;
     padding: 6px 0 10px;
-    background: #816263;
+    background: #8EBDB1;
     color: #fff;
     font-size: 19px;
     font-weight: 400;
@@ -729,13 +729,14 @@ a.like_name {
 .span1_of_4 h4 {
     margin: 0 0 15px 0;
     font-size: 23px;
-    color: #816263;
+    color: #8EBDB1;
     text-transform: capitalize;
     font-weight: 500;
 	    padding: 0;
 }
 .footer {
     padding: 50px 0;
+    background: #1F1F1F;
 }
 ul.f_nav li{
     list-style-type: none;
@@ -763,6 +764,9 @@ ul.f_nav li a{
 	color:#816263;
 }
 /*-- footer-ends-here --*/
+
+
+
 /*-- products-page-starts-here --*/
 .products{
 	width:20%;
