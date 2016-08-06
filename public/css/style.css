@@ -93,7 +93,7 @@ a.simpleCart_empty {
   float: left;
 }
 .banner {
-	background:url("../images/banner_img.jpg") no-repeat 0px 0px;
+	background:url("../images/home1.jpg") no-repeat 0px 0px;
 	background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
@@ -213,7 +213,7 @@ ul.multi-column-dropdown h6 {
 }
 .banner-bottom-left{
 	float:Left;
-	margin: 110px 0px 0px 30px;
+	margin: 50px 0px 0px 30px;
 }
 .banner-bottom-right{
 	float:right;
