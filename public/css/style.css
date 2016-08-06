@@ -213,7 +213,8 @@ ul.multi-column-dropdown h6 {
 }
 .banner-bottom-left{
 	float:Left;
-	margin: 50px 0px 0px 30px;
+	margin: 0px 0px 0px 0px;
+	
 }
 .banner-bottom-right{
 	float:right;
