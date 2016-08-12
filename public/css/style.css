@@ -47,6 +47,24 @@ label{
 	margin:0;
 }
 /*-----start-header----*/
+
+.imagenes-nosotros{
+background-color: #ffffff;
+padding: 5px 10px 5px 10px;
+margin:2px;
+float:left;
+width:100px;
+text-align:center;
+}
+.imagenes-nosotros-der{
+background-color: #ffffff;
+padding: 5px 10px 5px 10px;
+margin:2px;
+float:right;
+width:600px;
+text-align:center;
+}
+
 .header-top-strip{
 	padding:8px 0 14px 0;
 	background-color:#816263;
