@@ -11,4 +11,21 @@ class StoreController < ApplicationController
 
   def typo
   end
+    
+    def anillos
+    end
+    
+    def aretas
+    end
+    
+    def collares
+    end
+    
+    def pulseras
+    end
+    
+    def novedades
+    end
+    
+    
 end
