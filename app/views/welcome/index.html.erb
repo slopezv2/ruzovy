@@ -4,13 +4,9 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-	
-
 	<div class="banner">
-		<div class="container">
-            
+		<div class="container">         
             <!--/.navbar-header-->
-	
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	        <ul class="nav navbar-nav">
 			<li><%= link_to 'Inicio', root_path, method: :get %></li>
@@ -72,14 +68,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	        </ul>
 	    </div>
 	    <!--/.navbar-collapse-->
-            
-            
-            
 <div class="banner-bottom">
 	<div class="banner-bottom-left">
         <img src="images/logo3.png" width="240px" height="100">
-		<!--<h2>B<br>U<br>Y</h2>-->
-        
 	</div>
 	<div class="banner-bottom-right">
 		<div  class="callbacks_container">
@@ -123,7 +114,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			          $('.events').append("<li>after event fired.</li>");
 			        }
 			      });
-			
 			    });
 			  </script>
 	</div>
@@ -137,129 +127,69 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!-- content-section-starts-here -->
 		<div class="container">
 			<div class="main-content">
-				<!--<div class="online-strip">
-					<div class="col-md-4 follow-us">
-						<h3>follow us : <a class="twitter" href="#"></a><a class="facebook" href="#"></a></h3>
-					</div>
-					<div class="col-md-4 shipping-grid">
-						<div class="shipping">
-							<img src="images/shipping.png" alt="" />
-						</div>
-						<div class="shipping-text">
-							<h3>Free Shipping</h3>
-							<p>on orders over $ 199</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="col-md-4 online-order">
-						<p>Order online</p>
-						<h3>Tel:999 4567 8902</h3>
-					</div>
-					<div class="clearfix"></div>
-				</div>-->
 				<div class="products-grid">
 				<header>
 					<h3 class="like text-center">Novedades</h3>  
 				</header>
 					<div class="col-md-6 product simpleCart_shelfItem text-center">
-						<a data-method="get" href="store/single"><img src="images/collar1.JPG" alt="" /></a>
-						<div class="mask">
-							<a data-method="get" href="store/single">Quick View</a>
-                        </div>
-						
-						
+						<img data-imagezoom="true" src="images/collar1.JPG" alt="" />
 					</div>
 					<div class="col-md-2 product simpleCart_shelfItem text-center">
-						<a data-method="get" href="store/single"><img src="images/collar3.JPG" alt="" /></a>
-						<div class="mask">
-							<a data-method="get" href="store/single">Quick View</a>
-						</div>
+						<img src="images/collar3.JPG" data-imagezoom="true" alt=""/>
 						<a data-method="get" class="product_name" href="store/single">great explorer</a>
-						
 					</div>
 					<div class="col-md-2 product simpleCart_shelfItem text-center">
-						<a data-method="get" href="store/single"><img src="images/areta1.JPG" alt="" /></a>
-						<div class="mask">
-							<a data-method="get" href="store/single">Quick View</a>
-						</div>
+						<img data-imagezoom="true" src="images/areta1.JPG" alt="" />
 						<a data-method="get" class="product_name" href="store/single">similique sunt</a>
-						<!--<p><a class="item_add" href="#"> <span class="item_price">$359.6</span></a></p>-->
 					</div>
 					<div class="col-md-2 product simpleCart_shelfItem text-center">
-						<a data-method="get" href="store/single"><img src="images/pulsera1.JPG" alt="" /></a>
-						<div class="mask">
-							<a data-method="get" href="store/single">Quick View</a>
-						</div>
+						<img data-imagezoom="true" data-zoomviewposition="left" src="images/pulsera1.JPG" alt="" />
 						<a data-method="get" class="product_name" href="store/single">shrinking </a>
-						
 					</div>
 					<div class="col-md-2 product simpleCart_shelfItem text-center">
-						<a data-method="get" href="store/single"><img src="images/areta2.JPG" alt="" /></a>
-						<div class="mask">
-							<a data-method="get" href="store/single">Quick View</a>
-						</div>
+						<img data-imagezoom="true" src="images/areta2.JPG" alt="" />
 						<a data-method="get" class="product_name" href="store/single">perfectly simple</a>
-						
 					</div>
 					<div class="col-md-2 product simpleCart_shelfItem text-center">
-						<a data-method="get" href="store/single"><img src="images/collar5.JPG" alt="" /></a>
-						<div class="mask">
-							<a data-method="get" href="store/single">Quick View</a>
-						</div>
+						<img data-imagezoom="true" src="images/collar5.JPG" alt="" />
 						<a data-method="get" class="product_name" href="store/single">equal blame</a>
-					
 					</div>
 					<div class="col-md-2 product simpleCart_shelfItem text-center">
-						<a data-method="get" href="store/single"><img src="images/areta6.JPG" alt="" /></a>
-						<div class="mask">
-							<a data-method="get" href="store/single">Quick View</a>
-						</div>
+						<img data-imagezoom="true" data-zoomviewposition="left" src="images/areta6.JPG" alt="" />
 						<a data-method="get" class="product_name" href="store/single">Neque porro</a>
-						
 					</div>
-					
 					<div class="clearfix"></div>
 				</div>
 			</div>
-
 		</div>
-
-
-
-
-
 		<div class="other-products">
 		<div class="container">
 			<h3 class="like text-center"> <%= link_to 'Colección', store_products_path, method: :get %></h3>        			
 				     <ul id="flexiselDemo3">
 						<li><a data-method="get" href="store/single"><img src="images/collar12.JPG"  width= 93%  class="img-responsive" alt="" /></a>
 							<div class="product liked-product simpleCart_shelfItem">
-							<a class="like_name" data-method="get" href="store/single">perfectly simple</a>
+							<a class="like_name" data-method="get" href="store/single">perfectly simple</a>			
+							</div>
+						</li>
+						<li><a data-method="get" href="store/collares"><img src="images/collar7.JPG"  width= 93% class="img-responsive" alt="" /></a>						
+							<div class="product liked-product simpleCart_shelfItem">
+							<a class="like_name" data-method="get" href="store/collares">praising pain</a>
+							</div>
+						</li>
+						<li><a data-method="get" href="store/collares"><img src="images/collar11.JPG" width= 93% class="img-responsive" alt="" /></a>
+							<div class="product liked-product simpleCart_shelfItem">
+							<a class="like_name" data-method="get" href="store/collares">Neque porro</a>
 							
 							</div>
 						</li>
-						<li><a data-method="get" href="store/single"><img src="images/collar7.JPG"  width= 93% class="img-responsive" alt="" /></a>						
+						<li><a data-method="get" href="store/aretas"><img src="images/areta2.JPG"  width= 93% class="img-responsive" alt="" /></a>
 							<div class="product liked-product simpleCart_shelfItem">
-							<a class="like_name" data-method="get" href="store/single">praising pain</a>
-							
+							<a class="like_name" data-method="get" href="store/aretas">equal blame</a>
 							</div>
 						</li>
-						<li><a data-method="get" href="store/single"><img src="images/collar11.JPG" width= 93% class="img-responsive" alt="" /></a>
+						<li><a data-method="get" href="store/aretas"><img src="images/areta6.JPG" width= 93% class="img-responsive" alt="" /></a>
 							<div class="product liked-product simpleCart_shelfItem">
-							<a class="like_name" data-method="get" href="store/single">Neque porro</a>
-							
-							</div>
-						</li>
-						<li><a data-method="get" href="store/single"><img src="images/areta2.JPG"  width= 93% class="img-responsive" alt="" /></a>
-							<div class="product liked-product simpleCart_shelfItem">
-							<a class="like_name" data-method="get" href="store/single">equal blame</a>
-							
-							</div>
-						</li>
-						<li><a data-method="get" href="store/single"><img src="images/areta6.JPG" width= 93% class="img-responsive" alt="" /></a>
-							<div class="product liked-product simpleCart_shelfItem">
-							<a data-method="get" class="like_name" href="store/single">perfectly simple</a>
-							
+							<a data-method="get" class="like_name" href="store/aretas">perfectly simple</a>
 							</div>
 						</li>
 				     </ul>
