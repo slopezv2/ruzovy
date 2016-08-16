@@ -12,18 +12,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<li><%= link_to 'Inicio', root_path, method: :get %></li>
 		        <li class="dropdown">
 		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Colecciones <b class="caret"></b></a>
-		            <ul class="dropdown-menu multi-column columns-3">
+		            <ul class="dropdown-menu multi-column columns-2" >
 			            <div class="row">
 				             <div class="col-sm-4">
 					            <ul class="multi-column-dropdown">
-									<h6>Aretas</h6>
-						            <li><%= link_to 'products', store_aretas_path, method: :get %></li>
-						            <li><%= link_to 'products', store_aretas_path, method: :get %></li>
-						            <li><%= link_to 'products', store_aretas_path, method: :get %></li>
-						            <li><%= link_to 'products', store_aretas_path, method: :get %></li>
+									<h6>Colecciones</h6>
+						            <li><%= link_to 'Aretas', store_aretas_path, method: :get %></li>
+						            <li><%= link_to 'Pulseras', store_pulseras_path, method: :get %></li>
+						            <li><%= link_to 'Collares', store_collares_path, method: :get %></li>
+						            <li><%= link_to 'Anillos', store_anillos_path, method: :get %></li>
 					            </ul>
 				            </div>
-				            <div class="col-sm-4">
+				           <!-- <div class="col-sm-4">
 					            <ul class="multi-column-dropdown">
 									<h6>Pulseras</h6>
 						            <li><%= link_to 'products', store_pulseras_path, method: :get %></li>
@@ -57,7 +57,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						            <li><%= link_to 'products', store_anillos_path, method: :get %></li>
 						            <li><%= link_to 'products', store_anillos_path, method: :get %></li>
 					            </ul>
-				            </div>
+				            </div>-->
 							<div class="clearfix"></div>
 			            </div>
 		            </ul>
@@ -71,6 +71,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="banner-bottom">
 	<div class="banner-bottom-left">
         <img src="images/logo3.png" width="240px" height="100">
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+  <script src="http://notoyontoy.site40.net/Js/jquery.infinitecarousel3.min.js"></script>
+
+  <script type="text/javascript" src="http://notoyontoy.site40.net/Js/easing.js"></script>
+
+  
 	</div>
 	<div class="banner-bottom-right">
 		<div  class="callbacks_container">
@@ -123,7 +130,75 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<%= link_to 'Catálogo de colección', store_single_path, method: :get %>
 	</div>
 	</div>
+         
+        
 		</div>
+
+
+
+
+
+<!--
+ <ul id="carousel" class="hola">
+  
+  <li><img  width="600" height=338px  alt="" src="images/home1.jpg"  /></li>
+     
+  <li><img  width="600" height="338"  alt="" src="images/home2.jpg"  /></li>
+
+  <li ><img  width="600" height="338"  alt="" src="images/home3.jpg" /></li>
+
+
+</ul> 
+
+ <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+  <script src="http://notoyontoy.site40.net/Js/jquery.infinitecarousel3.min.js"></script>
+
+  <script type="text/javascript" src="http://notoyontoy.site40.net/Js/easing.js"></script>
+
+  <script>
+
+     var a = jQuery.noConflict();
+
+        a(document).ready(function() {
+
+        a('#carousel').infiniteCarousel({
+
+           transitionSpeed:1000,     /*Tiempo de avance de las imagenes*/
+
+           displayTime: 2000,   /* El tiempo en milisegundos para hacer pausa*/
+
+           thumbnailType: 'false',
+
+           customClass: 'myCarousel',
+
+           easeLeft: 'linear',
+
+           easeRight:'linear',
+
+           inView: 1,    /*Imagenes mostradas*/
+
+           advance: true,
+
+           autoPilot: true,
+
+           displayProgressRing: true,    /*muestra grafica del tiempo que pausa la imagen*/
+
+});
+
+ });
+
+    </script>
+-->
+
+
+
+
+
+
+
+
+
 		<!-- content-section-starts-here -->
 		<div class="container">
 			<div class="main-content">

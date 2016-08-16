@@ -27,5 +27,7 @@ class StoreController < ApplicationController
     def novedades
     end
     
+    def otros
+    end
     
 end
