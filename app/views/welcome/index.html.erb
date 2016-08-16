@@ -119,6 +119,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     
   </ol>
 
@@ -126,7 +127,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <div class="carousel-inner" role="listbox">
       
     <div class="item active">
-      <img src="images/home1.jpg" alt="Chania">
+      <img src="images/home5.jpg" alt="Chania">
       <div class="carousel-caption">
        
           
@@ -310,22 +311,55 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="banner-bottom">
 	<div class="banner-bottom-left">
         <img src="images/logo3.png" width="240px" height="100">
-        
-  
 	</div>
-	
-
-</div>
-	
-	
-          
-          
-          
-          
-          
-          
+</div>   
       </div>
     </div>
+      
+      
+      <div class="item">
+      <img src="images/home4.jpg" alt="Flower">
+      <div class="carousel-caption">
+          
+          
+          
+		       
+            <!--/.navbar-header-->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul class="nav navbar-nav">
+			<li><%= link_to 'Inicio', root_path, method: :get %></li>
+		        <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Colecciones <b class="caret"></b></a>
+		            <ul class="dropdown-menu multi-column columns-2" >
+			            <div class="row">
+				             <div class="col-sm-4">
+					            <ul class="multi-column-dropdown">
+									<h6>Colecciones</h6>
+						            <li><%= link_to 'Aretas', store_aretas_path, method: :get %></li>
+						            <li><%= link_to 'Pulseras', store_pulseras_path, method: :get %></li>
+						            <li><%= link_to 'Collares', store_collares_path, method: :get %></li>
+						            <li><%= link_to 'Anillos', store_anillos_path, method: :get %></li>
+					            </ul>
+				            </div>
+				          
+							<div class="clearfix"></div>
+			            </div>
+		            </ul>
+		        </li>
+		            <li><a data-method="get" href="../store/products">Novedades</a></li>
+					<li><%= link_to 'Elizabeth C. Salazar', store_typo_path, method: :get %></li>
+					<li><%= link_to 'Contacto', store_contact_path, method: :get %></li>
+	        </ul>
+	    </div>
+	    <!--/.navbar-collapse-->
+<div class="banner-bottom">
+	<div class="banner-bottom-left">
+        <img src="images/logo3.png" width="240px" height="100">
+	</div>
+</div>   
+      </div>
+    </div>
+      
 
     
   </div>
