@@ -112,7 +112,7 @@ div.ic_myCarousel {
 
 .header-top-strip{
 	padding:8px 0 14px 0;
-	background-color:#3382C9;
+	background-color:#FFC6CF;
 }
 .header-top-left ul li {
     display: inline-block;
@@ -1902,7 +1902,7 @@ h2.heading {
 	padding-bottom: 15px;
     font-size: 28px;
     letter-spacing: 1px;
-    color: #3382C9;
+    color: #8ebdb1;
 }
 .grid_4 h3 {
 	color: #666161;
@@ -1920,7 +1920,7 @@ h3.first {
 	    padding-bottom: 15px;
     font-size: 30px;
     letter-spacing: 1px;
-    color: #3382C9;
+    color: #8ebdb1;
 }
 .input-group {
     margin-bottom: 20px;
@@ -1929,7 +1929,7 @@ h3.bars {
     padding-bottom: 15px;
     font-size: 28px;
     letter-spacing: 1px;
-    color: #3382C9;
+    color: #8ebdb1;
 }
 .badge {
     background-color: #3382D3;
@@ -1944,7 +1944,7 @@ section#tables h2 {
     padding-bottom: 15px;
     font-size: 28px;
     letter-spacing: 1px;
-    color: #3382C9;
+    color: #8ebdb1;
 }
 div#myTabContent {
     margin-top: 0.5em;
