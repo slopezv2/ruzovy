@@ -553,13 +553,20 @@ a.twitter {
 	margin:0 1em;
 	  vertical-align: text-bottom;
 }
-a.twitter:hover,a.facebook:hover {
+a.twitter:hover,a.facebook:hover,a.instagram:hover{
 	opacity:0.5;
 }
 a.facebook {
 	width: 25px;
 	height: 25px;
 	background: url(../images/follow.png) no-repeat -25px 0px;
+	display: inline-block;
+	  vertical-align: text-bottom;
+}
+a.instagram {
+	width: 25px;
+	height: 25px;
+	background: url(../images/instagram.png) no-repeat 50px 50px;
 	display: inline-block;
 	  vertical-align: text-bottom;
 }
@@ -667,7 +674,7 @@ a.product_name {
 /*--end-product--*/
 h3.like{
     font-size: 30px;
-    color: #8ebdb1;
+    color: #8ebdb1; !important
     font-weight: 500;
 	    padding: 0;
 }
@@ -2222,6 +2229,9 @@ p.right {
 .social-icons  ul li a.twitter1 {
 	background-position: -18px 0px;
 }
+.social-icons  ul li a.instagram1 {
+	background-position: -36px 0px;
+}
 .social-icons  ul li a.googleplus1 {
 	background-position: -36px 0px;
 }
@@ -2845,6 +2855,12 @@ p.right {
 		background: url(../images/follow.png) no-repeat -18px 2px;
 		background-size: 35px;
 	}
+    a.instagram{
+        width: 20px;
+		height: 20px;
+		background: url(../images/instagram.png) no-repeat 50px 50px;
+		background-size: 35px;
+    }
 	.online-strip h3 {
 		font-size: 1.2em;
 	}

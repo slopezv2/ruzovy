@@ -138,7 +138,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	        <ul class="nav navbar-nav">
 			<li><%= link_to 'Inicio', root_path, method: :get %></li>
 		        <li class="dropdown">
-		            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Colecciones <b class="caret"></b></a>
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Colecciones<b class="caret"></b></a>
 		            <ul class="dropdown-menu multi-column columns-2" >
 			            <div class="row">
 				             <div class="col-sm-4">
@@ -154,7 +154,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="clearfix"></div>
 			            </div>
 		            </ul>
-		        </li>
+		         </li>
 		            <li><a data-method="get" href="../store/novedades">Novedades</a></li>
 					<li><%= link_to 'Elizabeth C. Salazar', store_typo_path, method: :get %></li>
 					<li><%= link_to 'Contacto', store_contact_path, method: :get %></li>
@@ -169,7 +169,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   
 	</div>
 	<div class="banner-bottom-right">
-		<div  class="callbacks_container">
+		<!--<div  class="callbacks_container">
 					<ul class="rslides" id="slider4">
 					<li>
 								<div class="banner-info">
@@ -190,8 +190,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>								
 							</li>
 						</ul>
-					</div>
-					<!--banner-->
+					</div>-->
+					
 	  			<script src="js/responsiveslides.min.js"></script>
 			 <script>
 			    // You can also use "$(window).load(function() {"
@@ -215,11 +215,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	<div class="clearfix"> </div>
 </div>
-	<div class="shop">
+	<!--<div class="shop">
 		<%= link_to 'Catálogo de colección', store_products_path, method: :get %>
-	</div>
+	</div>-->
 	
-         
+         <div class="col-md-4 follow-us">
+						<h3> <a class="twitter" href="#"></a><a class="facebook" href="#"></a><a class="instagram" href="#"></a></h3>
+					</div>
         
 	
 
@@ -383,70 +385,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
 
-
-
-
-<!--
- <ul id="carousel" class="hola">
-  
-  <li><img  width="600" height=338px  alt="" src="images/home1.jpg"  /></li>
-     
-  <li><img  width="600" height="338"  alt="" src="images/home2.jpg"  /></li>
-
-  <li ><img  width="600" height="338"  alt="" src="images/home3.jpg" /></li>
-
-
-</ul> 
-
- <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-
-  <script src="http://notoyontoy.site40.net/Js/jquery.infinitecarousel3.min.js"></script>
-
-  <script type="text/javascript" src="http://notoyontoy.site40.net/Js/easing.js"></script>
-
-  <script>
-
-     var a = jQuery.noConflict();
-
-        a(document).ready(function() {
-
-        a('#carousel').infiniteCarousel({
-
-           transitionSpeed:1000,     /*Tiempo de avance de las imagenes*/
-
-           displayTime: 2000,   /* El tiempo en milisegundos para hacer pausa*/
-
-           thumbnailType: 'false',
-
-           customClass: 'myCarousel',
-
-           easeLeft: 'linear',
-
-           easeRight:'linear',
-
-           inView: 1,    /*Imagenes mostradas*/
-
-           advance: true,
-
-           autoPilot: true,
-
-           displayProgressRing: true,    /*muestra grafica del tiempo que pausa la imagen*/
-
-});
-
- });
-
-    </script>
--->
-
-
-
-
-
-
-
-
-
 		<!-- content-section-starts-here -->
 		<div class="container">
 			<div class="main-content">
@@ -494,7 +432,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<div class="other-products">
 		<div class="container">
-			<h3 class="like text-center"> <%= link_to 'Colección', store_products_path, method: :get %></h3>        			
+			<h3 class="like text-center"> Colección</h3>        			
 				     <ul id="flexiselDemo3">
 						<li><a data-method="get" href="store/single"><img src="images/collar12.JPG"  width= 93%  class="img-responsive" alt="" /></a>
 							<div class="product liked-product simpleCart_shelfItem">
@@ -552,5 +490,5 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				   </script>
 				   <script type="text/javascript" src="js/jquery.flexisel.js"></script>
 				   </div>
-				   </div>
+        </div>
 		<!-- content-section-ends-here -->
