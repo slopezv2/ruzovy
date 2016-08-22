@@ -3485,7 +3485,7 @@ tbody.collapse.in {
 .dropdown-menu > .active > a:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #337ab7;
+  background-color: #8ebdb1;
   outline: 0;
 }
 .dropdown-menu > .disabled > a,
@@ -4005,7 +4005,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #8ebdb1;
 }
 .nav-stacked > li {
   float: none;
@@ -4629,7 +4629,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.42857143;
-  color: #337ab7;
+  color: #8ebdb1;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -4649,7 +4649,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #23527c;
+  color: #8ebdb1;
   background-color: #eee;
   border-color: #ddd;
 }
