@@ -1,0 +1,20 @@
+
+<div class="container">  
+    <div class="grid">
+        <br>
+        <br>
+        <div class="col-md-4"></div>
+        <div class="col-md-4 col-xs-12">
+            <%= form_tag '/autenticar', class: "form-signin" do %>
+               <h2 class="form-signin-heading">Administrador</h2>
+                <label for="inputEmail" class="sr-only">Correo</label>
+                <%= email_field_tag 'inputEmail', nil, class: 'form-control', placeholder: "Correo electrónico", required: 'true' %>
+                <label for="inputPassword" class="sr-only">Clave</label>
+                <%= password_field_tag 'inputPassword', nil, class: 'form-control', placeholder: "Clave", required: 'true' %>
+                <br>
+                <%= submit_tag 'Entrar', class: "btn btn-lg btn-primary btn-block" %>
+            <% end %>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    </div>

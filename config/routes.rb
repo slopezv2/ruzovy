@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'administracion/login'
+
+  get 'administracion/agregar_fotos'
+
+  get 'administracion/fotos'
+
   get 'store/products'
 
   get 'store/contact'
@@ -20,6 +26,7 @@ Rails.application.routes.draw do
     get 'store/novedades'
     
     get 'store/otros'
+    post 'autenticar/' => 'administracion#autenticar', as: 'login'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
