@@ -3,7 +3,7 @@
   <ul class="nav navbar-nav">
     <li class="pull-xs-right">
       <% if logged? %>
-        <a class="" href="#">Salir</a>
+      <%= link_to "Salir", cerrar_sesion_path, method: :delete %>
       <% end %>
     </li>
   </ul>

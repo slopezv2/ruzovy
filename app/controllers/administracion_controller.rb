@@ -25,16 +25,54 @@ class AdministracionController < ApplicationController
 
   def fotos
     check_authentication
+    @images = Image.all
+  end
+
+  def cargar_imagen
+    check_authentication
+    @imagen = Image.new()
+    parameters = cargar_imagen_params
+    @imagen.url = parameters[:inputURL]
+    @imagen.category = parameters[:inputCategoria]
+    @imagen.description = parameters[:inputDescription]
+    if @imagen.save
+      flash[:success] = "Imagen guardada exitosamente"
+    else
+      flash[:error] = "Error en la carga de imagen"
+    end
+    redirect_to administracion_fotos_url
   end
 
   def login
   end
 
+  def borrar_imagen
+    check_authentication
+    @image = Image.find_by(id: borrar_imagen_params[:id] )
+    unless @image.destroy
+      flash[:error] = "No se pudo borrar la imagen"      
+    else  
+      flash[:success] = "Imagen borrada exitosamente" 
+    end
+    redirect_to administracion_fotos_url
+  end
+
+  def cerrar_sesion
+    session.delete(:user_id)
+    redirect_to root_url
+  end
   private 
   
   def login_params
     params.permit(:inputPassword, :inputEmail)
   end
 
+  def cargar_imagen_params
+    params.permit(:inputCategoria, :inputURL,:inputDescription)
+  end
+
+  def borrar_imagen_params
+    params.permit(:id)
+  end
 end
 

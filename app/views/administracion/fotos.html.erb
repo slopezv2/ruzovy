@@ -1,30 +1,23 @@
+<%= link_to 'Nueva foto', administracion_agregar_fotos_path, class: "btn btn-primary" %>
 <table class="table table-hover">
   <thead>
     <tr>
       <th>#</th>
       <th>URL</th>
+      <th>Categoría</th>
       <th>Vista Previa</th>
-      <th colspan="3">Opciones</th>
+      <th>Opciones</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+    <% @images.each do |image| %>
+      <tr>
+        <td><%= image.id %></td>
+        <td><%= image.url %></td>
+        <td><%= image.category %></td>
+        <td><img src=<%= "#{image.url}" %> width="150" height="100" class="img-responsive" /></td>
+        <td><%= link_to "Eliminar", borrar_imagen_path(image), data: { confirm: '¿Desea eliminar la imagen?' }, method: 'delete', class: "btn btn-danger" %> </td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+    <% end %>  
   </tbody>
 </table>
