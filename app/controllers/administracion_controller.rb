@@ -66,6 +66,16 @@ class AdministracionController < ApplicationController
     NotificacionesMailer.suscribir(suscripcion_params[:email]).deliver_now
     flash[:success] = "Suscripción completa"
     redirect_to root_url
+  end
+  def contacto
+    parameters = contacto_params
+    nombre = parameters[:nombre]
+    correo = parameters[:correo]
+    tema = parameters[:tema]
+    mensaje = parameters[:mensaje]
+    NotificacionesMailer.contacto(correo,nombre,tema,mensaje).deliver_now
+    flash[:success] = "Gracias, nos estaremos comunicando con usted"
+    redirect_to store_contact_url 
   end  
   private 
   
@@ -83,6 +93,10 @@ class AdministracionController < ApplicationController
 
   def suscripcion_params
     params.permit(:email)
+  end
+
+  def contacto_params
+    params.permit(:nombre, :correo, :tema, :mensaje)
   end
 end
 

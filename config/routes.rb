@@ -31,6 +31,10 @@ Rails.application.routes.draw do
 
     post 'cargar_imagen/' => 'administracion#cargar_imagen', as: 'cargar_imagen'
 
+    post 'contactar/' => 'administracion#contacto', as: 'contactar'
+
+    post 'suscribir/' => 'administracion#suscripcion', as: 'suscribir'
+
     delete 'borrar_imagen/:id' => 'administracion#borrar_imagen', as: 'borrar_imagen'
 
     delete 'cerrar_sesion/' => 'administracion#cerrar_sesion', as: 'cerrar_sesion'

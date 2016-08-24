@@ -27,18 +27,18 @@
 			<div class="contact-info">
 				<h3>Envianos tus comentarios</h3>
 			</div>
-			<form>
+			<%= form_tag '/contactar' do %>
 				<div class="contact-left">
-					<input type="text" placeholder="Nombre" required>
-					<input type="text" placeholder="Correo" required>
-					<input type="text" placeholder="Tema" required>
+					<%= text_field_tag 'nombre', nil, placeholder: "Nombre", required: 'true' %>
+					<%= text_field_tag 'correo', nil, placeholder: "Correo", required: 'true' %>
+					<%= text_field_tag 'tema', nil, placeholder: "Tema", required: 'true' %>
 				</div>
 				<div class="contact-right">
-					<textarea placeholder="Mensaje" required></textarea>
+					<%= text_area_tag 'mensaje', nil, placeholder: "Mensaje...", required: "true"  %>
 				</div>
 				<div class="clearfix"></div>
-				<input type="submit" value="Aceptar">
-			</form>
+				 <%= submit_tag 'Enviar' %>
+			<% end %>
 		</div>
 	</div>
 </div>

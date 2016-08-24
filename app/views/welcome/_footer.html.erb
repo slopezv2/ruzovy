@@ -4,10 +4,10 @@
 				<div class="join">
 					<h6>Escríbenos</h6>
 					<div class="sub-left-right">
-						<form>
-							<input type="text" value="Escriba su correo aqui" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Escriba su correo aqui';}" />
+						<%= form_tag '/suscribir' do %>
+							<input type="text" name="email" id="name" value="Escriba su correo aqui" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Escriba su correo aqui';}" />
 							<input type="submit" value="Enviar" />
-						</form>
+						<% end %>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
