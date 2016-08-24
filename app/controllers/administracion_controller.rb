@@ -61,6 +61,12 @@ class AdministracionController < ApplicationController
     session.delete(:user_id)
     redirect_to root_url
   end
+
+  def suscripcion
+    NotificacionesMailer.suscribir(suscripcion_params[:email]).deliver_now
+    flash[:success] = "Suscripción completa"
+    redirect_to root_url
+  end  
   private 
   
   def login_params
@@ -73,6 +79,10 @@ class AdministracionController < ApplicationController
 
   def borrar_imagen_params
     params.permit(:id)
+  end
+
+  def suscripcion_params
+    params.permit(:email)
   end
 end
 
