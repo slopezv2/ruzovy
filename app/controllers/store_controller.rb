@@ -13,6 +13,7 @@ class StoreController < ApplicationController
   end
     
     def anillos
+      @anillos = Image.where(category: "Anillos").reverse_order
     end
     
     def aretas

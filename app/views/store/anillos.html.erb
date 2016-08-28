@@ -55,9 +55,32 @@
 				</div>
 					<div class="clearfix"></div>
 					<ul>
-                        <br>
-                        <br>
-                        <p>Por el momento no hay fotos para mostrar de esta categoría</p>
+					    <% if @anillos %>
+						<% @anillos.each do |anillo| %>
+                       <li>
+								<div class="simpleCart_shelfItem">
+							 <div class="view view-first">
+					   		  <div class="inner_content clearfix">
+								<div class="product_image">
+									<img src=<%= "#{anillo.url}" %> class="img-responsive" alt=""/>
+									<div class="product_container">
+									   <div class="cart-left">
+										 <p class="title"></p>
+									   </div>
+									   <div class="clearfix"></div>
+								     </div>		
+								  </div>
+			                     </div>
+		                      </div>
+                                </div>
+							<div class="cbp-vm-details">
+								<%= "#{anillo.description}" %>
+							</div>
+							
+							
+						</li>
+						<% end %>
+						<% end %>
 					</ul>
 				</div>
 				<script src="../../js/cbpViewModeSwitch.js" type="text/javascript"></script>
