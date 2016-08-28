@@ -1771,7 +1771,7 @@ ul.women_pagenation li a:hover{
 }
 p.click a{
 	display: inline-block;
-	color:#816263;
+	color:#8ebdb1;
 }
 p.click a:hover{
 	color: #000;
@@ -1789,7 +1789,7 @@ p.click a:hover{
 	cursor: pointer;
 	font-weight: 500;
 	margin: 0 0 32px 0;
-	background: #816263;
+	background: #8ebdb1;
 	border-top: none;
 	border-left: none;
 	border-right: none;
@@ -1857,7 +1857,7 @@ p.click a:hover{
 	font-size: 14px;
 	cursor: pointer;
 	font-weight: 500;
-	background:#816263;
+	background:#8ebdb1;
 }
 .contact-form input[type=submit]:hover {
 	background:#000;
