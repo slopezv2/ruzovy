@@ -17,15 +17,19 @@ class StoreController < ApplicationController
     end
     
     def aretas
+      @aretas = Image.where(category: "Aretas").reverse_order
     end
     
     def collares
+      @collares = Image.where(category: "Collares").reverse_order
     end
     
     def pulseras
+      @pulseras = Image.where(category: "Pulseras").reverse_order
     end
     
     def novedades
+      @novedades = Image.where(category: "Novedades").reverse_order
     end
     
     def otros

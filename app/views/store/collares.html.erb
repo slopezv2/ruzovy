@@ -55,201 +55,18 @@
 				</div>
 					<div class="clearfix"></div>
 					<ul>
-                        <li>
-								<div class="simpleCart_shelfItem">
-								<div class="view view-first">
-					   		  <div class="inner_content clearfix">
-								<div class="product_image">
-									<img src="../../images/collar1.JPG" class="img-responsive" alt=""/>
-									<div class="product_container">
-									   <div class="cart-left">
-										 <p class="title">Praising Pain</p>
-									   </div>
-									   <!--<div class="pricey"><span class="item_price">$199.00</span></div>-->
-									   <div class="clearfix"></div>
-								     </div>		
-								  </div>
-			                     </div>
-		                      </div>
-                                </div>
-							<div class="cbp-vm-details">
-								Kohlrabi bok choy broccoli rabe welsh onion spring onion tatsoi ricebean kombu chard.
-							</div>
-						</li>
-					  <li>
+                      <% if @collares %>
+						<% @collares.each do |collar| %>
+                       <li>
 								<div class="simpleCart_shelfItem">
 							 <div class="view view-first">
 					   		  <div class="inner_content clearfix">
 								<div class="product_image">
-									<img src="../../images/collar2.JPG" class="img-responsive" alt=""/>
+									<img src=<%= "#{collar.url}" %> class="img-responsive" alt=""/>
 									<div class="product_container">
 									   <div class="cart-left">
-										 <p class="title">perspiciatis</p>
-									   </div>			   
-									   <div class="clearfix"></div>
-								     </div>		
-								  </div>
-			                     </div>
-		                      </div>
-                                </div>
-							<div class="cbp-vm-details">
-								Silver beet shallot wakame tomatillo salsify mung bean beetroot groundnut.
-							</div>
-						</li>
-						<li>
-								<div class="simpleCart_shelfItem">
-							  <div class="view view-first">
-					   		  <div class="inner_content clearfix">
-								<div class="product_image">
-									<img src="../../images/collar3.JPG" class="img-responsive" alt=""/>
-									<div class="product_container">
-									   <div class="cart-left">
-										 <p class="title">Great Explorer</p>
-									   </div>	   
-									   <div class="clearfix"></div>
-								     </div>		
-								  </div>
-			                     </div>
-		                      </div>
-                                </div>
-							<div class="cbp-vm-details">
-								Wattle seed bunya nuts spring onion okra garlic bitterleaf zucchini.
-							</div>
-						</li>
-						<li>
-								<div class="simpleCart_shelfItem">
-								<div class="view view-first">
-					   		  <div class="inner_content clearfix">
-								<div class="product_image">
-									<img src="../../images/collar4.JPG" class="img-responsive" alt=""/>
-									<div class="product_container">
-									   <div class="cart-left">
-										 <p class="title">Similique Sunt</p>
-									   </div>	  
-									   <div class="clearfix"></div>
-								     </div>		
-								  </div>
-			                     </div>
-		                      </div>
-                                </div>
-							<div class="cbp-vm-details">
-								Kohlrabi bok choy broccoli rabe welsh onion spring onion tatsoi ricebean kombu chard.
-							</div>
-						</li>
-						<li>
-								<div class="simpleCart_shelfItem">
-								<div class="view view-first">
-					   		  <div class="inner_content clearfix">
-								<div class="product_image">
-									<img src="../../images/collar5.JPG" class="img-responsive" alt=""/>
-									<div class="product_container">
-									   <div class="cart-left">
-										 <p class="title">Shrinking</p>
-									   </div>	   
-									   <div class="clearfix"></div>
-								     </div>		
-								  </div>
-			                     </div>
-		                      </div>
-                                </div>
-							<div class="cbp-vm-details">
-								Kohlrabi bok choy broccoli rabe welsh onion spring onion tatsoi ricebean kombu chard.
-							</div>
-						</li>
-						<li>
-							
-								<div class="simpleCart_shelfItem">
-								<div class="view view-first">
-					   		  <div class="inner_content clearfix">
-								<div class="product_image">
-									<img src="../../images/collar6.JPG" class="img-responsive" alt=""/>
-									<div class="product_container">
-									   <div class="cart-left">
-										 <p class="title">Perfectly Simple</p>
-									   </div>	   
-									   <div class="clearfix"></div>
-								     </div>		
-								  </div>
-			                     </div>
-		                      </div>
-                                </div>
-							<div class="cbp-vm-details">
-								Kohlrabi bok choy broccoli rabe welsh onion spring onion tatsoi ricebean kombu chard.
-							</div>
-						</li>
-						<li>
-								<div class="simpleCart_shelfItem">
-								<div class="view view-first">
-					   		  <div class="inner_content clearfix">
-								<div class="product_image">
-									<img src="../../images/collar7.JPG" class="img-responsive" alt=""/>
-									<div class="product_container">
-									   <div class="cart-left">
-										 <p class="title">Equal Blame</p>
-									   </div>	   
-									   <div class="clearfix"></div>
-								     </div>		
-								  </div>
-			                     </div>
-		                      </div>
-                                </div>
-							<div class="cbp-vm-details">
-								Kohlrabi bok choy broccoli rabe welsh onion spring onion tatsoi ricebean kombu chard.
-							</div>
-						</li>
-						<li>
-							
-								<div class="simpleCart_shelfItem">
-								<div class="view view-first">
-					   		  <div class="inner_content clearfix">
-								<div class="product_image">
-									<img src="../../images/collar8.JPG" class="img-responsive" alt=""/>
-									<div class="product_container">
-									   <div class="cart-left">
-										 <p class="title">Neque Porro</p>
-									   </div>	   
-									   <div class="clearfix"></div>
-								     </div>		
-								  </div>
-			                     </div>
-		                      </div>
-                                </div>
-						
-							<div class="cbp-vm-details">
-								Kohlrabi bok choy broccoli rabe welsh onion spring onion tatsoi ricebean kombu chard.
-							</div>
-						</li>
-						<li>
-								<div class="simpleCart_shelfItem">
-								<div class="view view-first">
-					   		  <div class="inner_content clearfix">
-								<div class="product_image">
-									<img src="../../images/collar9.JPG" class="img-responsive" alt=""/>
-									<div class="product_container">
-									   <div class="cart-left">
-										 <p class="title">Perfectly Simple</p>
-									   </div>	  
-									   <div class="clearfix"></div>
-								     </div>		
-								  </div>
-			                     </div>
-		                      </div>
-                                </div>
-							<div class="cbp-vm-details">
-								Kohlrabi bok choy broccoli rabe welsh onion spring onion tatsoi ricebean kombu chard.
-							</div>
-						</li>
-						<li>
-								<div class="simpleCart_shelfItem">
-								<div class="view view-first">
-					   		  <div class="inner_content clearfix">
-								<div class="product_image">
-									<img src="../../images/collar10.JPG" class="img-responsive" alt=""/>>
-									<div class="product_container">
-									   <div class="cart-left">
-										 <p class="title">Praising Pain</p>
+										 <p class="title"></p>
 									   </div>
-									   
 									   <div class="clearfix"></div>
 								     </div>		
 								  </div>
@@ -257,49 +74,13 @@
 		                      </div>
                                 </div>
 							<div class="cbp-vm-details">
-								Kohlrabi bok choy broccoli rabe welsh onion spring onion tatsoi ricebean kombu chard.
-							</div>
+								<%= "#{areta.description}" %>
+							</div>	
 						</li>
-                        <li>
-								<div class="simpleCart_shelfItem">
-								<div class="view view-first">
-					   		  <div class="inner_content clearfix">
-								<div class="product_image">
-									<img src="../../images/collar11.JPG" class="img-responsive" alt=""/>
-									<div class="product_container">
-									   <div class="cart-left">
-										 <p class="title">Praising Pain</p>
-									   </div>	   
-									   <div class="clearfix"></div>
-								     </div>		
-								  </div>
-			                     </div>
-		                      </div>
-                                </div>
-							<div class="cbp-vm-details">
-								Kohlrabi bok choy broccoli rabe welsh onion spring onion tatsoi ricebean kombu chard.
-							</div>
-						</li>
-                        <li>
-								<div class="simpleCart_shelfItem">
-								<div class="view view-first">
-					   		  <div class="inner_content clearfix">
-								<div class="product_image">
-									<img src="../../images/collar12.JPG" class="img-responsive" alt=""/>
-									<div class="product_container">
-									   <div class="cart-left">
-										 <p class="title">Praising Pain</p>
-									   </div>	   
-									   <div class="clearfix"></div>
-								     </div>		
-								  </div>
-			                     </div>
-		                      </div>
-								</div>
-							<div class="cbp-vm-details">
-								Kohlrabi bok choy broccoli rabe welsh onion spring onion tatsoi ricebean kombu chard.
-							</div>
-						</li>
+						<br>
+						<br>
+						<% end %>
+						<% end %>
 					</ul>
 				</div>
 				<script src="../../js/cbpViewModeSwitch.js" type="text/javascript"></script>
