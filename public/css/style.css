@@ -566,7 +566,7 @@ a.facebook {
 a.instagram {
 	width: 25px;
 	height: 25px;
-	background: url(../images/instagram.png) no-repeat 50px 50px;
+	background: url(../images/instagram.png);
 	display: inline-block;
 	  vertical-align: text-bottom;
 }
@@ -2230,7 +2230,7 @@ p.right {
 	background-position: -18px 0px;
 }
 .social-icons  ul li a.instagram1 {
-	background-position: -36px 0px;
+	background-position: 0px 0px;
 }
 .social-icons  ul li a.googleplus1 {
 	background-position: -36px 0px;
@@ -2858,7 +2858,7 @@ p.right {
     a.instagram{
         width: 20px;
 		height: 20px;
-		background: url(../images/instagram.png) no-repeat 50px 50px;
+		background: url(../images/instagram.png);
 		background-size: 35px;
     }
 	.online-strip h3 {
